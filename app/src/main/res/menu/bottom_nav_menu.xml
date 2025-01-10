@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/ironManFragment"
+        android:icon="@drawable/ic_iron_man"
+        android:title="Iron Man" />
+
+    <item
+        android:id="@+id/spiderManFragment"
+        android:icon="@drawable/ic_spider_man"
+        android:title="Spider-Man" />
+
+    <item
+        android:id="@+id/thorFragment"
+        android:icon="@drawable/ic_thor"
+        android:title="Thor" />
+
+    <item
+        android:id="@+id/captainAmericaFragment"
+        android:icon="@drawable/captain_america"
+        android:title="Captain America" />
+
+    <item
+        android:id="@+id/hulkFragment"
+        android:icon="@drawable/ic_hulk"
+        android:title="Hulk" />
+</menu>

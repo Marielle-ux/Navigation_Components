@@ -1,0 +1,52 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/ironManFragment">
+
+    <fragment
+        android:id="@+id/ironManFragment"
+        android:name="com.example.navigationcomponent.IronManFragment"
+        tools:layout="@layout/iron_man_fragment" >
+        <action
+            android:id="@+id/action_ironManFragment_to_spiderManFragment"
+            app:destination="@id/spiderManFragment"
+            app:popUpTo="@id/spiderManFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/spiderManFragment"
+        android:name="com.example.navigationcomponent.SpiderManFragment"
+        tools:layout="@layout/fragment_spider_man" >
+        <action
+            android:id="@+id/action_spiderManFragment_to_thorFragment"
+            app:destination="@id/thorFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/thorFragment"
+        android:name="com.example.navigationcomponent.ThorFragment"
+        tools:layout="@layout/fragment_thor" >
+        <action
+            android:id="@+id/action_thorFragment_to_captainAmericaFragment"
+            app:destination="@id/captainAmericaFragment"
+            app:popUpTo="@id/captainAmericaFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/captainAmericaFragment"
+        android:name="com.example.navigationcomponent.CaptainAmericaFragment"
+        tools:layout="@layout/fragment_captain_america" >
+        <action
+            android:id="@+id/action_captainAmericaFragment_to_hulkFragment"
+            app:destination="@id/hulkFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/hulkFragment"
+        android:name="com.example.navigationcomponent.HulkFragment"
+        tools:layout="@layout/fragment_hulk" >
+        <action
+            android:id="@+id/action_hulkFragment_to_thorFragment"
+            app:destination="@id/thorFragment" />
+    </fragment>
+</navigation>
