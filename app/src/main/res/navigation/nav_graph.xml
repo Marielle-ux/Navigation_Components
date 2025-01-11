@@ -48,5 +48,8 @@
         <action
             android:id="@+id/action_hulkFragment_to_thorFragment"
             app:destination="@id/thorFragment" />
+        <action
+            android:id="@+id/action_hulkFragment_to_thorFragment2"
+            app:destination="@id/thorFragment" />
     </fragment>
 </navigation>
